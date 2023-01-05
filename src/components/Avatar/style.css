@@ -1,0 +1,21 @@
+.avatar-img {
+  color: transparent;
+    /* Afficher l'image */
+    background-image: url("https://blog.pagesd.info/public/2021/queen-of-hearts.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.avatar-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: limegreen;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
