@@ -2,7 +2,7 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.click-outside {
+.click_outside {
     position: absolute;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@
     background-color: transparent;
 }
 
-.menu-warper {
+.menu_warper {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -31,31 +31,31 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.menu-warper.show {
+.menu_warper.show {
     transform: translateX(0);
 }
 
-.close-menu {
+.close_menu {
     cursor: pointer;
 }
 
-.close-menu span {
+.close_menu span {
     margin-left: 15px;
     color: #666;
     font-size: 20px;
 }
 
-.close-menu svg {
+.close_menu svg {
     width: 20px;
     height: 20px;
     fill: #666;
 }
 
-.close-menu:hover span {
+.close_menu:hover span {
     color: #000;
 }
 
-.close-menu:hover svg {
+.close_menu:hover svg {
     fill: #000;
 }
 
