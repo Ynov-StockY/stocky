@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.input-text-container {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label, input {
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    padding-left: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 25px;
+    border: 1px solid #C49D83;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #000000;
+    opacity: 0.5;
+}
