@@ -1,0 +1,44 @@
+.typography {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.heading1 {
+  font-size: 3rem;
+}
+
+.heading2 {
+  font-size: 2.2rem;
+}
+
+.heading3 {
+  font-size: 1.6rem;
+}
+
+.body1,
+.body2 {
+  text-transform: none;
+  font-size: 1.2rem;
+}
+
+.body1 {
+  font-weight: 700;
+}
+
+.body2 {
+  font-weight: 500;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
