@@ -85,7 +85,7 @@ p {
     color: #666;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     .menu_warper {
         width: 300px;
     }

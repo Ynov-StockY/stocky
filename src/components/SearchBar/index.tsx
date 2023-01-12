@@ -3,9 +3,10 @@ import style from "./style.module.css";
 
 type SearchBarProps = {
   placeholder: string;
+  display: "desktop" | "mobile";
 };
 
-export default function SearchBar({ placeholder }: SearchBarProps) {
+export default function SearchBar({ placeholder, display }: SearchBarProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [isFocused, setIsFocused] = useState<boolean>(false);
 
@@ -23,8 +24,7 @@ export default function SearchBar({ placeholder }: SearchBarProps) {
   };
 
   return (
-    <>
-      <div >
+      <div className={`${display === "desktop"? style.displayDesktop : null} ${display === "mobile"? style.displayMobile : null}`}>
         <button className={isFocused === true ? style.buttonFoccussed : style.buttonSearch} onClick={() => setFocus()}>
           <div className={style.magnifyingGlassFoccussed} />
         </button>
@@ -46,6 +46,5 @@ export default function SearchBar({ placeholder }: SearchBarProps) {
           <div className={style.cross} onClick={() => setFocus()}>X</div>
         </form>
       </div>
-    </>
   );
 }
