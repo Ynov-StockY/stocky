@@ -1,4 +1,6 @@
+import React from "react";
 import { ReactNode } from "react";
+import classes from "./classes.module.css";
 
 type Props = {
   icon: ReactNode;
@@ -6,13 +8,15 @@ type Props = {
 };
 
 const IconButton = ({ icon, onClick }: Props) => {
-  const animate = () => {};
+  const [pulse, setPulse] = React.useState<boolean>(false);
   return (
     <div
       onClick={() => {
-        animate();
         onClick();
+        setPulse(true);
       }}
+      className={`${classes.btn} ${pulse && classes.pulse}`}
+      onAnimationEnd={() => setPulse(false)}
     >
       {icon}
     </div>
