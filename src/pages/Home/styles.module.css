@@ -1,0 +1,12 @@
+.app {
+
+}
+
+.hero_img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  position: absolute;
+  z-index: 1;
+}

@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Typography from '../Typography';
 import classes from './styles.module.css';
