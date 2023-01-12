@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Typography from '../Typography';
 import classes from './styles.module.css';
 
 export default function Menu(props: {
@@ -42,7 +43,7 @@ export default function Menu(props: {
                         <div className={classes.infos_container}>
                             {props.infos.map((info, index) => {
                                 return (
-                                    <p key={index}>{info}</p>
+                                    <Typography variant="body2" key={index}>{info}</Typography>
                                 );
                             })}
                         </div>
