@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation, useParams } from "
 import About from "./About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./Home";
+import Home from "./pages/Home";
 import Announcements from "./pages/Announcements";
 import classes from "./styles.module.css";
 
