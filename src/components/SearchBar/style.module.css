@@ -51,8 +51,26 @@
   padding: 5px;
 }
 .cross {
-  margin: 7px;
+  margin: 10px;
   width: 1em;
   height: 1em;
   cursor: pointer;
+}
+
+.displayMobile {
+  display: none;
+}
+
+.displayDesktop {
+  display: block;
+}
+
+@media (max-width: 960px) {
+  .displayMobile {
+    display: block;
+  }
+
+  .displayDesktop {
+    display: none;
+  }
 }

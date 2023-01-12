@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import SearchBar from '../SearchBar';
 import Typography from '../Typography';
 import classes from './styles.module.css';
 
@@ -35,6 +36,7 @@ export default function Menu(props: {
                             );
                         })}
                     </ul>
+                    <SearchBar display={"mobile"} placeholder={"Search"} />
                 </div>
                 {props.infos && (
                     <>
