@@ -1,0 +1,19 @@
+.links {
+  text-align: center;
+  padding: 1rem;
+}
+
+.link {
+  display: inline-block;
+  margin: 0 0.2rem;
+  text-decoration: none;
+  color: rgb(0 0 0 / 0.4);
+  cursor: pointer;
+}
+
+.link.active,
+.link:hover,
+.link:focus {
+  color: rgb(0 0 0 / 1);
+  transform: scale(1.1);
+}
