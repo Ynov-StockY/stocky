@@ -19,7 +19,9 @@
     width: 100%;
     align-self: center;
 }
-.headerRight, .headerLeft {
+
+.headerRight,
+.headerLeft {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -34,11 +36,12 @@
 .headerRight {
     justify-content: flex-end;
 }
+
 .headerRight>* {
     margin-left: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     .header {
         padding: 20px 40px;
     }
