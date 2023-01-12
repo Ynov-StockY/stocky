@@ -1,7 +1,19 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+}
+
+@media screen and (min-width: 568px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .card {
