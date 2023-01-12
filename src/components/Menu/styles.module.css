@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
-    width: 300px;
+    width: 100vw;
     height: 100vh;
     background-color: #fff;
     border-radius: 0;
@@ -83,4 +83,10 @@ hr {
 p {
     font-size: 14px;
     color: #666;
+}
+
+@media (min-width: 768px) {
+    .menu_warper {
+        width: 300px;
+    }
 }
