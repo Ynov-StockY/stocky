@@ -1,16 +1,24 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Icon from "./components/Icon";
-import IconButton from "./components/IconButton";
+import About from "./About";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./Home";
 import Announcements from "./pages/Announcements";
+import classes from "./styles.module.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className={classes.app}>
       <Router>
-        <Routes>
-          <Route path="/" element={<>home</>} />
-          <Route path="/announcements" element={<Announcements />} />
-        </Routes>
+        <Header />
+        <div className={classes.main}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/announcements" element={<Announcements />} />
+          </Routes>
+        </div>
+        <Footer />
       </Router>
     </div>
   );

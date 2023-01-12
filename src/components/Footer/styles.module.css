@@ -1,0 +1,43 @@
+.footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  font-family: arial, helvetica, sans-serif;
+  margin-bottom: 0;
+}
+
+@media (max-width:960px) {
+  .footer ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer_container {
+    flex-direction: column;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+}

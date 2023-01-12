@@ -32,7 +32,7 @@ export default function Menu(props: {
                     <ul>
                         {props.menuItems.map((menuItem, index) => {
                             return (
-                                <li className={classes.link} key={index} onClick={() => navigate(menuItem.path)}>{menuItem.label}</li>
+                                <li className={classes.link} key={index} onClick={() =>  navigate(menuItem.path)}>{menuItem.label}</li>
                             );
                         })}
                     </ul>
