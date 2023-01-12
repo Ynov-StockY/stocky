@@ -1,27 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Icon from "./components/Icon";
-import IconButton from "./components/IconButton";
+import About from "./About";
+import Header from "./components/Header";
+import Home from "./Home";
 
 function App() {
   return (
     <div className="App">
       <Router>
+      <Header />
         <Routes>
-          <Route
-            path="/"
-            element={
-              <IconButton
-                icon={
-                  <Icon
-                    src="https://i.ebayimg.com/images/g/8dsAAOSwo79Z04Kw/s-l500.jpg"
-                    size="md"
-                    alt=""
-                  />
-                }
-                onClick={() => console.log("coucou")}
-              />
-            }
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>
