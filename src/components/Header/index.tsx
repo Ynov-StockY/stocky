@@ -15,6 +15,7 @@ export default function Header() {
     const menuItems = [
         { label: "Home", path: "/" },
         { label: "About", path: "/about" },
+        { label: "Announcements", path: "/announcements"}
     ];
     const [show, setShow] = React.useState(false);
     const infos = ["Pays de livraison : France", "info2", "info3"];
